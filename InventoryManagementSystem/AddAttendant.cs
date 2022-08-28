@@ -8,17 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-
 namespace InventoryManagementSystem
 {
-    public partial class AddAdmin : Form
+    public partial class AddAttendant : Form
     {
-        public AddAdmin()
+        public AddAttendant()
         {
             InitializeComponent();
         }
 
-        private void AddAdmin_Load(object sender, EventArgs e)
+        private void AddAttendant_Load(object sender, EventArgs e)
         {
 
         }
@@ -67,21 +66,16 @@ namespace InventoryManagementSystem
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            txtName.Text = "";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Dispose();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            txtName.Text = "";
-            txtPassword.Text = "";
-            txtUsername.Text = "";
         }
     }
 }

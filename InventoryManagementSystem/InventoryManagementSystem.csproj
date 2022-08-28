@@ -99,12 +99,48 @@
     <Compile Include="AddAdmin.Designer.cs">
       <DependentUpon>AddAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="db_con.cs" />
-    <Compile Include="Home.cs">
+    <Compile Include="AddAttendant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="AddAttendant.Designer.cs">
+      <DependentUpon>AddAttendant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductCategory.Designer.cs">
+      <DependentUpon>AddProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducts.Designer.cs">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSales.Designer.cs">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendantDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendantDash.Designer.cs">
+      <DependentUpon>AttendantDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendants.Designer.cs">
+      <DependentUpon>Attendants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db_con.cs" />
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Admins.cs">
       <SubType>Form</SubType>
@@ -112,25 +148,68 @@
     <Compile Include="Admins.designer.cs">
       <DependentUpon>Admins.cs</DependentUpon>
     </Compile>
+    <Compile Include="Encrypt.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductCategory.Designer.cs">
+      <DependentUpon>ProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.cs">
+      <DependentUpon>Products.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAdmin.resx">
       <DependentUpon>AddAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="AddAttendant.resx">
+      <DependentUpon>AddAttendant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductCategory.resx">
+      <DependentUpon>AddProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProducts.resx">
+      <DependentUpon>AddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSales.resx">
+      <DependentUpon>AddSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendantDash.resx">
+      <DependentUpon>AttendantDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendants.resx">
+      <DependentUpon>Attendants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admins.resx">
       <DependentUpon>Admins.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCategory.resx">
+      <DependentUpon>ProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,6 +221,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

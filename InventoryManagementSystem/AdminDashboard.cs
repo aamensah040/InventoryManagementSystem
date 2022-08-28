@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InventoryManagementSystem
 {
-    public partial class Home : Form
+    public partial class AdminDashboard : Form
     {
-        public Home()
+        public AdminDashboard()
         {
             InitializeComponent();
             hideSubMenu();
@@ -65,7 +65,7 @@ namespace InventoryManagementSystem
             //..
             //your codes
             //..
-            hideSubMenu();
+            openChildForm(new Attendants());
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace InventoryManagementSystem
             //..
             //your codes
             //..
-            hideSubMenu();
+            openChildForm(new Products());
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace InventoryManagementSystem
             //..
             //your codes
             //..
-            hideSubMenu();
+            openChildForm(new ProductCategory());
         }
 
         private void button6_Click(object sender, EventArgs e)

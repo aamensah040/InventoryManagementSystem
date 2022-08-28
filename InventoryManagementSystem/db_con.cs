@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace InventoryManagementSystem
 {
@@ -11,7 +12,7 @@ namespace InventoryManagementSystem
     {
         public static string cs = @"server=localhost; userid=root; password=; database=inventory_system;";  
         public static MySqlConnection con = new MySqlConnection(cs);
-
+        public static MySqlCommand cmd = new MySqlCommand();    
         public static void OpenConn()
         {
             try
@@ -35,5 +36,18 @@ namespace InventoryManagementSystem
                 Console.WriteLine(ex.Message);
             }
         }
+        public DataTable getTable(string q)
+        {
+            OpenConn();
+            cmd = new MySqlCommand(q, con);
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            CloseConn();
+            return table;
+
+
+        }
+
     }
 }

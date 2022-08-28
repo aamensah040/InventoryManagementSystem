@@ -13,6 +13,7 @@ namespace InventoryManagementSystem
 {
     public partial class Login : Form
     {
+        public string _role = "";
         public Login()
         {
             InitializeComponent();
@@ -26,23 +27,39 @@ namespace InventoryManagementSystem
             {
                 try
                 {
-                    //string enc_pass = Encrypt.HashString(password.Text)
-                    string query = "Select * from users where username = '" + usernameTxt.Text + "' && password ='" + passwordTxt.Text + "'";
+                    bool _exists = false;
+                    string enc_pass = Encrypt.HashString(passwordTxt.Text);
+                    string query = "Select * from users where username = '" + usernameTxt.Text + "' && password ='" + enc_pass + "'";
                     command = new MySqlCommand(query, db_con.con);
                     MySqlDataReader reader = command.ExecuteReader();
                     if (reader.Read())
                     {
-                        this.Hide();
-                        reader.Close();
-                        Home homeScreen = new Home();
-                        homeScreen.Show();
+                        _exists = true;
+                        _role = reader["role"].ToString();
 
                     }
                     else
                     {
-                        reader.Close();
                         MessageBox.Show("Incorrect credentials!!");
                     }
+                    reader.Close();
+
+                    if(_exists)
+                    {
+                        if(_role =="Administrator")
+                        {
+                            this.Hide();
+                            AdminDashboard adminDashboard = new AdminDashboard();
+                            adminDashboard.Show();
+                        }
+                        if(_role == "Attendant")
+                        {
+                            this.Hide();
+                            AttendantDash attendantDash = new AttendantDash();
+                            attendantDash.Show();
+                        }
+                    }
+
                 }
                 catch (Exception ex)
                 {
