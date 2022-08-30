@@ -191,6 +191,7 @@
             this.btnMedia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMedia.UseVisualStyleBackColor = true;
+            this.btnMedia.Click += new System.EventHandler(this.btnMedia_Click);
             // 
             // panelLogo
             // 
@@ -236,7 +237,7 @@
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.panelChildForm);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AttendantDash";
             this.Text = "Attendant Dashboard";
             this.Load += new System.EventHandler(this.AttendantDash_Load);

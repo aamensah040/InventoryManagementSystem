@@ -26,5 +26,10 @@ namespace InventoryManagementSystem
         {
 
         }
+
+        private void btnMedia_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
