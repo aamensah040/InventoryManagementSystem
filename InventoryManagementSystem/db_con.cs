@@ -45,8 +45,16 @@ namespace InventoryManagementSystem
             adapter.Fill(table);
             CloseConn();
             return table;
+        }
 
+        public double ExtractDBData(string q)
+        {
+            OpenConn();
+            cmd = new MySqlCommand(q, con);
+            double data = double.Parse(cmd.ExecuteScalar().ToString());
+            CloseConn();
 
+            return data;
         }
 
     }

@@ -202,7 +202,7 @@ namespace InventoryManagementSystem
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            btnDash.PerformClick();
         }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
@@ -213,6 +213,11 @@ namespace InventoryManagementSystem
         private void button11_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Do you want to Logout?");
+        }
+
+        private void btnDash_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Dashboard());
         }
     }
 }

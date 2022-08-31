@@ -43,6 +43,7 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeight = 30;
@@ -58,7 +59,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(684, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(684, 396);
             this.dataGridView1.TabIndex = 12;
             // 
             // Column5
@@ -72,36 +73,32 @@
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 159;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "NAME";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
-            this.Column2.Width = 161;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "USERNAME";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
-            this.Column3.Width = 160;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "ROLE";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            this.Column4.Width = 160;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 390);
+            this.panel2.Location = new System.Drawing.Point(0, 396);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(684, 41);
+            this.panel2.Size = new System.Drawing.Size(684, 35);
             this.panel2.TabIndex = 14;
             // 
             // button1
@@ -109,7 +106,7 @@
             this.button1.Dock = System.Windows.Forms.DockStyle.Right;
             this.button1.Location = new System.Drawing.Point(609, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 41);
+            this.button1.Size = new System.Drawing.Size(75, 35);
             this.button1.TabIndex = 10;
             this.button1.Text = "Add New";
             this.button1.UseVisualStyleBackColor = true;
